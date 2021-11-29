@@ -20,8 +20,60 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>QuizzApp</title>
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">QuizzApp</span>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="card quiz-card">
+        <img src="img/pencil.jpg" id="header-image" class="card-img-top" />
+
+        <div id="endscreen" class="card-body">
+          <div class="text-center final-headline">Quiz beendet!</div>
+
+          <div class="text-center">
+            Du hast <b id="correct-answers">XXX</b> Fragen von
+            <b class="questions-count"></b> richtig beantwortet.
+          </div>
+        </div>
+
+        <div id="questionbody" class="card-body">
+          <h5 id="questiontext" class="card-title">Frage</h5>
+
+          <div class="card mb-2">
+            <div id="a1" class="answers card-body">Antwort</div>
+          </div>
+          <div class="card mb-2">
+            <div id="a2" class="answers card-body">Antwort</div>
+          </div>
+          <div class="card mb-2">
+            <div id="a3" class="answers card-body">Antwort</div>
+          </div>
+          <div class="card mb-2">
+            <div id="a4" class="answers card-body">Antwort</div>
+          </div>
+          <div class="question-footer">
+            <span>
+              <b id="questions-number">1</b> von
+              <b class="questions-count"></b> Fragen
+            </span>
+            <button id="next-question" class="btn btn-primary" disabled>
+              Nächste Frage
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
+
+<!-- <p class="card-text">
+  Some quick example text to build on the card title and make up the
+  bulk of the card's content.
+</p>
+<a href="#" class="btn btn-primary">Go somewhere</a> -->
